@@ -87,7 +87,6 @@ def audio_callback(indata, frames, time_info, status):
     if len(frequency_history) >= 8: # need at least 10 frequencies to compare
         if time.time() - last_trigger > 1: # prevent too frequent triggers
             diff = np.mean(frequency_history[-4:]) - np.mean(frequency_history[:4]) # compare average of last and first 4 frequencies
-            print(diff, np.mean(frequency_history[-4:]), np.mean(frequency_history[:4]))
             if abs(diff) > 50: #50 Hz threshold for detecting a chirp
                 if diff > 0:
                     print("Up")
