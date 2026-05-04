@@ -3,3 +3,6 @@
 # 1. Karaoke Game
 Quick Tutorial: Es werden die erkannte Frequenz und die Zielfrequenz der aktuellen Note für 2s angezeigt, man muss mit der erkannten Frequenz die Zielfrequenz mit einer Abweichung von 20Hz erreichen für einen Punkt, das kann man im ganzen 2s Zeitfenster wiederholen.
 Note: Es ist ein Amplituden Schwellwert in den Konstanten definiert. Falls keine Frequenz erkannt wird, muss man den runter setzen, ich habe ihn für mein Mikro auf 1 gesetzt.
+
+# 2. Whistle Input
+Quick Tutorial: “ooouuuiii” for an upwards chirp triggers up key, and “iiiuuuooo” for a downwards chirp trigger down key.
