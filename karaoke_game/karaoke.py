@@ -106,7 +106,6 @@ def audio_callback(indata, frames, time, status):
 
     # get detected frequency from audio data
     detected_frequency = get_frequency(data, RATE)
-    print(f"Detected frequency: {detected_frequency:.2f} Hz")
 
 # Game update function
 def update(dt):
